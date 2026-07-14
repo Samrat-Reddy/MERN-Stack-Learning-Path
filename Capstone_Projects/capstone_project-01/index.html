@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Samrat Reddy">
+        <meta name="Description" content="The First Capstone Project for my MERN Stack learning journey.">
+        <title>Survivalist's Field Guide & Inventory Ledger</title>
+    </head>
+    
+    <body>
+        <header>
+            <h1>Command Center Dashboard</h1>
+            <h2>Station Name: Web Dev Station</h2>
+
+            <nav>
+                <a href="sop.html">Standard Operating Procedures</a><br><br>
+                <a href="catalog.html">The Cryptid & Flora Field Catalog</a>
+            </nav>
+        </header>
+        <hr>
+        
+        <main>
+
+            <table>
+                <thead>
+                    <caption>Inventory Ledger</caption>
+                    <th>&nbsp;</th>
+                    <th>Item Category</th>
+                    <th>Item Name</th>
+                    <th>Quantity Remaining</th>
+                    <th>Expiration Date</th>
+                    <th>Status Alert</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th rowspan="3">Essentials</th>
+                        <td>Medication</td>
+                        <td>Pain Reliever</td>
+                        <td>50</td>
+                        <td>31-12-2028</td>
+                        <td>Low Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Food</td>
+                        <td>Canned Beans</td>
+                        <td>200</td>
+                        <td>30-06-2029</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Water</td>
+                        <td>Bottled Water</td>
+                        <td>1000</td>
+                        <td>01-01-2030</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Gear</th>
+                        <td>Tools</td>
+                        <td>Multi-tool</td>
+                        <td>10</td>
+                        <td>N/A</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>Clothing</td>
+                        <td>Thermal Jacket</td>
+                        <td>5</td>
+                        <td>N/A</td>
+                        <td>Low Stock</td>
+                </tbody>
+
+                <tfoot>
+                    <th colspan="6">Inventory Last Updated: 14-07-2026</th>
+                </tfoot>
+            </table>
+
+            <hr>
+
+            <form>
+                <fieldset>
+                    <legend>Environmental Data</legend>
+
+                    <label for="temperature">Temperature:</label>
+                    <input type="number" id="temperature" name="temperature" placeholder="Enter temperature in °C" step="0.1"><br><br>
+
+                    <label for="windConditions">Wind Conditions:</label>
+                    <input type="radio">Calm
+                    <input type="radio">Breezy
+                    <input type="radio">Windy
+                    <input type="radio">Storm<br><br>
+
+                    <label for="logNotes">Log Notes:</label><br>
+                    <textarea id="logNotes" name="logNotes" placeholder="Enter any additional notes..."></textarea><br><br>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Survivalist Command Center. All rights reserved. Author: Samrat Reddy.</p>
+        </footer>
+    </body>
+</html>
