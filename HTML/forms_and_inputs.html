@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Samrat Reddy">
+        <meta name="Description" content="HTML practice page demonstrating various forms, input types, validation attributes, fieldsets, and textareas.">
+        <title>HTML Learning Journey - Forms and Inputs</title>
+    </head>
+
+    <body>
+        <h1>Job Application Portal</h1>
+        <form>
+            <fieldset>
+                <legend>Job Application Form</legend>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" autocomplete="on" required>
+                <br><br>
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name" autocomplete="on" required>
+                <br><br>
+                <label for="experience">Experience (in years)</label>
+                <input type="number" name="experience" id="experience" placeholder="Experience" min="0" max="20" required>
+                <br><br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="email@example.com" autocomplete="on" required>
+                <br><br>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" placeholder="1234567890" pattern="[0-9]{10}" required>
+                <br><br>
+                <label for="resume">Upload Resume</label>
+                <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx" required>
+                <br><br>
+                <label for="aboutYou">About You</label>
+                <textarea name="aboutYou" id="aboutYou" placeholder="Tell us about yourself..." rows="4" cols="50" required></textarea>
+                <br><br>
+                <input type="submit" value="Submit Application">
+                <input type="reset" value="Reset Form">
+            </fieldset>
+        </form>
+
+        <hr>
+        <nav>
+            <p>
+                <a href="tables.html">&lt;&lt; Back to Tables</a> | 
+                <a href="capstone_project-01.html">Next up: Capstone Project 01 &gt;&gt;</a>
+            </p>
+        </nav>
+    </body>
+</html>
