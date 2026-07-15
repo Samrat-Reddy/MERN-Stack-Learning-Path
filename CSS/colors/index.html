@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CSS Color Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Target 1: The Global Theme (Root variables & Dark Mode support) -->
+    <header>
+        <h1>The Color Experiment</h1>
+        <p>A pure CSS playground testing depths, tones, and transparency.</p>
+        <button type="button">Toggle Theme Contrast</button>
+    </header>
+
+    <main>
+        <!-- Target 2: Gradients & Text Clipping -->
+        <section id="hero-banner">
+            <h2>Spectacular Vibrancy</h2>
+            <p>Can you make this heading show a multi-color gradient inside the text itself?</p>
+        </section>
+
+        <!-- Target 3: Color Schemes & Harmony (Ideal for HSL) -->
+        <section id="palette-grid">
+            <div class="swatch">
+                <h3>Primary Tone</h3>
+                <p>Base brand identity color.</p>
+            </div>
+            <div class="swatch">
+                <h3>Complementary</h3>
+                <p>Direct opposite on the color wheel.</p>
+            </div>
+            <div class="swatch">
+                <h3>Analogous Accent</h3>
+                <p>A warm neighbor next to the primary tone.</p>
+            </div>
+        </section>
+
+        <!-- Target 4: Alpha Channels & Overlays (RGBA / HSLA) -->
+        <section id="glass-card-container">
+            <div class="glass-card">
+                <h3>Glassmorphism Effect</h3>
+                <p>This card needs a semi-transparent white background and a frosted border that lets the background image or color blur and peek through beautifully.</p>
+            </div>
+        </section>
+
+        <!-- Target 5: Interactive States (Hover Tones & Focus) -->
+        <section id="interactive-zone">
+            <a href="#">Interactive Link</a>
+            <button class="btn-submit">Submit Form</button>
+            <div class="alert-box">
+                <p>Alert: Action required! (Make this border look like a darker shade of the alert background without picking a brand new color manually).</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Color is a power which directly influences the soul. — Wassily Kandinsky</p>
+    </footer>
+
+</body>
+</html>
