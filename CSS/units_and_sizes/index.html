@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CSS Sizing Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Target 1: Viewport Heights & Fluid Headers -->
+    <header>
+        <div class="hero-content">
+            <h1>Scalable Typography</h1>
+            <p>A masterclass in relative units and structural constraints.</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Target 2: Readability Bounds (ch unit) -->
+        <section id="reading-zone">
+            <h2>The Golden Line Length</h2>
+            <p>This paragraph contains a block of text meant for comfortable reading. If a line of text stretches out too wide across a large desktop monitor, the human eye struggles to track back to the beginning of the next line, causing cognitive fatigue. Can you restrict the width of this specific container using a unit that adapts strictly to character count, ensuring it never exceeds the ideal 60 to 75 characters per line regardless of font size?</p>
+        </section>
+
+        <!-- Target 3: Relative Components (em vs rem) -->
+        <section id="component-scaling">
+            <h2>Component Resiliency</h2>
+            
+            <div class="card small-text-box">
+                <h3>Small Context Card</h3>
+                <p>This card has a smaller inherited font size.</p>
+                <button class="btn-action">Click Me</button>
+            </div>
+
+            <div class="card large-text-box">
+                <h3>Large Context Card</h3>
+                <p>This card has a much larger inherited font size.</p>
+                <button class="btn-action">Click Me</button>
+            </div>
+        </section>
+
+        <!-- Target 4: Fluid Grids Without Media Queries (minmax, auto-fit) -->
+        <section id="responsive-gallery">
+            <h2>The No-Media-Query Grid</h2>
+            <div class="grid-container">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Target 5: Aspect Ratios -->
+    <footer>
+        <div class="media-preview">
+            <!-- Imagine a responsive square or 16:9 video container here -->
+            <p>Fixed Aspect Ratio Box</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+#sizing-clash .box{
+    width: 300px;
+    padding: 20px;
+    border: 5px solid;
+}
+
+.content-box-test {
+    box-sizing: content-box;
+}
+
+.border-box-test {
+    box-sizing: border-box;
+}
+
+.collapsing-card .first-card{
+    margin-bottom: 40px;
+}
+
+.collapsing-card .second-card {
+    margin-top: 30px;
+}
+
+.inline-highlight {
+    padding: 20px;
+    margin: 30px;
+    border: 3px solid;
+}
+
+.visual-test-btn:hover {
+    outline: auto;
+}

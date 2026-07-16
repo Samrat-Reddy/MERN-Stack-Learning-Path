@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CSS Box Model Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>The Box Model Arena</h1>
+        <p>A testing ground for padding, borders, margins, and layout behavior.</p>
+    </header>
+
+    <main>
+        <!-- Target 1: Box-Sizing Mechanics -->
+        <section id="sizing-clash">
+            <h2>The Width Calculation Duel</h2>
+            <div class="box content-box-test">
+                <h3>Content Box</h3>
+                <p>Width: 300px. Padding: 20px. Border: 5px. What is my actual total computed width?</p>
+            </div>
+            <div class="box border-box-test">
+                <h3>Border Box</h3>
+                <p>Width: 300px. Padding: 20px. Border: 5px. What is my actual total computed width?</p>
+            </div>
+        </section>
+
+        <!-- Target 2: Margin Collapsing -->
+        <section id="margin-collapse-zone">
+            <h2>The Margin Collapse Phenomenon</h2>
+            <div class="collapsing-card first-card">
+                <p>I have a margin-bottom of 40px.</p>
+            </div>
+            <div class="collapsing-card second-card">
+                <p>I have a margin-top of 30px.</p>
+            </div>
+            <p class="question">How many pixels of empty space sit between these two cards? Why isn't it 70px?</p>
+        </section>
+
+        <!-- Target 3: Inline vs Block Box Behavior -->
+        <section id="display-types">
+            <h2>The Inline vs Block Box Model Trap</h2>
+            <p>
+                Can you add heavy vertical padding, margins, and borders to 
+                <span class="inline-highlight">this specific inline span</span> 
+                without breaking the surrounding paragraph text structure?
+            </p>
+        </section>
+
+        <!-- Target 4: Outlines vs Borders -->
+        <section id="outline-versus-border">
+            <h2>Borders vs Outlines</h2>
+            <button class="visual-test-btn">Interactive Button</button>
+            <p>Make this button glow on focus, but without pushing surrounding elements or changing the button's layout size by even 1 pixel.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Everything in CSS is a box. Master the box, master the web.</p>
+    </footer>
+
+</body>
+</html>
