@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CSS Link Styling Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Target 1: The Breadcrumb & State Order -->
+    <header>
+        <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+                <li><a href="/home">Home</a></li>
+                <li><a href="/tutorials">Tutorials</a></li>
+                <li><a href="/tutorials/css" aria-current="page">CSS Basics</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Target 2: The Inline Text Underline Effect -->
+        <section id="inline-links">
+            <h2>Contextual Reading Links</h2>
+            <p>
+                When reading through an article, inline anchors like this 
+                <a href="https://example.com/deep-dive" class="animated-underline">deep dive into layout theory</a> 
+                should stand out clearly. However, standard underlines often slice right through the descenders of letters like 'g', 'j', 'p', 'q', and 'y'. Can you design an elegant custom underline that breathes, animates on hover, and avoids clipping the letters?
+            </p>
+        </section>
+
+        <!-- Target 3: Smart External Link Indicator (Attribute Selectors) -->
+        <section id="resource-hub">
+            <h2>Resource Directory</h2>
+            <p>This list contains a mix of internal page anchors, standard links, and secure external files.</p>
+            <ul class="link-list">
+                <li><a href="#inline-links">Jump back to Inline Section</a></li>
+                <li><a href="https://www.w3.org/">Visit the W3C Official Site</a></li>
+                <li><a href="http://insecure-website.org">Legacy Community Forum</a></li>
+                <li><a href="/downloads/cheat-sheet.pdf">Download CSS Cheat Sheet (PDF)</a></li>
+            </ul>
+        </section>
+
+        <!-- Target 4: The Full-Card Link Trap (UX & Accessibility) -->
+        <section id="card-layout">
+            <h2>Interactive Grid Cards</h2>
+            <div class="clickable-card">
+                <h3>Card Component Title</h3>
+                <p>The entire surface area of this card should be clickable to make it user-friendly, but semantically, we only want the anchor tag wrapping the title itself to avoid turning the paragraph text blue or confusing screen readers.</p>
+                <a href="/article/1" class="card-anchor">Read full article</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Before leaving, review our <a href="/privacy-policy">Privacy Policy</a>.</p>
+    </footer>
+
+</body>
+</html>

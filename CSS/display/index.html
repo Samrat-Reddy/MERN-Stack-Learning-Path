@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CSS Display Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>The Display Engine Lab</h1>
+        <p>Switching structural flow, switching context, and layout environments.</p>
+    </header>
+
+    <main>
+        <!-- Target 1: The Horizontal Menu Bar (Inline-Block vs Flex) -->
+        <section id="toolbar-section">
+            <h2>Application Toolbar</h2>
+            <div class="toolbar">
+                <button type="button">New File</button>
+                <button type="button">Open Project</button>
+                <span class="status-indicator">Connected</span>
+                <button type="button" class="btn-danger">Delete All</button>
+            </div>
+        </section>
+
+        <!-- Target 2: Element Hiding (none vs visibility vs opacity) -->
+        <section id="visibility-sandbox">
+            <h2>The Vanishing Act</h2>
+            <p>Three boxes sit below. You need to hide each one using a completely different method to learn the consequences of each display choice.</p>
+            <div class="container">
+                <div class="ghost-box method-a">
+                    <h3>Box A</h3>
+                    <p>I should disappear completely and let Box B slide over into my space.</p>
+                </div>
+                <div class="ghost-box method-b">
+                    <h3>Box B</h3>
+                    <p>I should become invisible, but still occupy my physical layout space on the screen.</p>
+                </div>
+                <div class="ghost-box method-c">
+                    <h3>Box C</h3>
+                    <p>I should look invisible, but remain fully interactive if a mouse clicks me.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Target 3: Centering & Component Alignment (Flexbox Environment) -->
+        <section id="hero-card-zone">
+            <h2>The Ultimate Alignment Challenge</h2>
+            <div class="profile-card">
+                <div class="avatar">👤</div>
+                <h3>Alex Morgan</h3>
+                <p>Lead Interface Architect specializing in flexible design systems.</p>
+            </div>
+        </section>
+
+        <!-- Target 4: Multi-Column Cards Grid (Grid Environment) -->
+        <section id="dashboard-grid">
+            <h2>System Dashboard</h2>
+            <div class="dashboard-wrapper">
+                <div class="dash-item widget-large">Main Analytics Chart</div>
+                <div class="dash-item">Server Status</div>
+                <div class="dash-item">Recent Activity</div>
+                <div class="dash-item widget-wide">System Logs Terminal</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Display Lab © 2026</p>
+    </footer>
+
+</body>
+</html>

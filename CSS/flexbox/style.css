@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 1.25rem;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    background: #111827;
+    color: #f9fafb;
+}
+
+.logo {
+    margin-right: auto;
+    font-weight: 700;
+}
+
+.nav-links {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-links a {
+    color: #f9fafb;
+    text-decoration: none;
+    margin: 0 0.75rem;
+}
+
+.user-profile {
+    margin-left: auto;
+}
+
+.btn-logout {
+    padding: 0.55rem 0.9rem;
+    border: none;
+    border-radius: 0.4rem;
+    background: #2563eb;
+    color: #fff;
+}
+
+.workspace {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.sidebar-left,
+.sidebar-right {
+    flex: 0 0 250px;
+    min-width: 250px;
+    padding: 1rem;
+    background: #e2e8f0;
+    border-radius: 0.5rem;
+}
+
+.editor-main {
+    flex: 1 1 400px;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 0.5rem;
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 0.8rem;
+    margin-top: 1rem;
+}
+
+.tag {
+    padding: 0.45rem 0.7rem;
+    border-radius: 999px;
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.feature-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+}
+
+.feature-media {
+    flex: 0 0 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 110px;
+    border-radius: 0.6rem;
+    background: #fef3c7;
+}
+
+.feature-text {
+    flex: 1;
+    align-self: flex-start;
+}
+
+.feature-card:nth-of-type(2) .feature-media {
+    order: 2;
+}
+
+.feature-card:nth-of-type(2) .feature-text {
+    order: 1;
+}

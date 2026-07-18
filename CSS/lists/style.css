@@ -1,0 +1,98 @@
+.main-nav {
+    background: #1f2937;
+    padding: 0.75rem 1rem;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 1.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    min-height: 2.75rem;
+}
+
+.main-nav a {
+    color: #f9fafb;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+    color: #93c5fd;
+}
+
+.checkmark-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.checkmark-list li {
+    position: relative;
+    padding-left: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.checkmark-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #16a34a;
+    font-weight: bold;
+}
+
+.nested-counter-list {
+    list-style: none;
+    counter-reset: section;
+    padding-left: 0;
+}
+
+.nested-counter-list > li {
+    counter-increment: section;
+    margin: 0.5rem 0;
+}
+
+.nested-counter-list > li::before {
+    content: counter(section) ". ";
+    font-weight: 700;
+}
+
+.nested-counter-list ol {
+    list-style: none;
+    counter-reset: subsection;
+    padding-left: 1.5rem;
+    margin-top: 0.25rem;
+}
+
+.nested-counter-list ol > li {
+    counter-increment: subsection;
+    margin: 0.25rem 0;
+    position: relative;
+}
+
+.nested-counter-list ol > li::before {
+    content: counter(section) "." counter(subsection) ". ";
+    font-weight: 600;
+}
+
+.nested-counter-list ol ol {
+    list-style: none;
+    counter-reset: subsubsection;
+    padding-left: 1.5rem;
+    margin-top: 0.25rem;
+}
+
+.nested-counter-list ol ol > li {
+    counter-increment: subsubsection;
+    margin: 0.25rem 0;
+}
+
+.nested-counter-list ol ol > li::before {
+    content: counter(section) "." counter(subsection) "." counter(subsubsection) ". ";
+    font-weight: 500;
+}

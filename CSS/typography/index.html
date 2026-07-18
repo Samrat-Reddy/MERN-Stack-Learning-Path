@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CSS Typography Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Target 1: The Modern System Font Stack & Scaling -->
+    <header>
+        <span class="kicker">Design System v2.0</span>
+        <h1>Architecting Digital Reading Experiences</h1>
+        <p class="lead-in">Typography is an art, a science, and a core utility.</p>
+    </header>
+
+    <main>
+        <!-- Target 2: Line Heights & Vertical Rhythm -->
+        <section id="essay-reading">
+            <h2>The Rhythm of the Page</h2>
+            <p>If the line height of a paragraph is too tight, the reader’s eye gets trapped, accidentally reading the same line twice. If it is too loose, the text falls apart and loses its structure. By default, browsers use a unitless multiplier for text, but you need to dial in the absolute sweet spot for long-form reading.</p>
+            <p>Additionally, pay attention to the space between these two paragraphs. A classic beginner mistake is using a break tag to add space rather than letting semantic margins do the heavy lifting.</p>
+        </section>
+
+        <!-- Target 3: Text Transformations & Spacing Rules -->
+        <section id="ui-components">
+            <h2>UI Typography Components</h2>
+            
+            <div class="metadata-row">
+                <span>Published: July 2026</span>
+                <span>Category: Development</span>
+                <span>Read Time: 5 Mins</span>
+            </div>
+
+            <blockquote cite="https://en.wikipedia.org/wiki/Typography">
+                "Type design is a beautiful, intricate craft, but web typography is where that craft meets human utility."
+            </blockquote>
+        </section>
+
+        <!-- Target 4: Text Overflow & Multi-line Truncation -->
+        <section id="card-overflow">
+            <h2>The Overflow Sandbox</h2>
+            <div class="excerpt-card">
+                <h3>A Very Long Article Title That Will Absolutely Break Layouts If It Does Not Wrap Elegantly On Narrow Screens</h3>
+                <p class="truncate-me">This is a summary paragraph meant to preview a post. However, it is way too long for a tiny UI card preview. Can you use pure CSS typography tools to truncate this text cleanly after exactly three lines, automatically appending a beautiful trailing ellipsis (...)?</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Typography Sandbox. Built with semantic type.</p>
+    </footer>
+
+</body>
+</html>

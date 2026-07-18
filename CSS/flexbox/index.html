@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CSS Flexbox Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Target 1: The Sticky App Header (Space Distribution) -->
+    <header class="app-header">
+        <div class="logo">⚡ FlexApp</div>
+        <nav class="nav-links">
+            <a href="#">Dashboard</a>
+            <a href="#">Projects</a>
+            <a href="#">Settings</a>
+        </nav>
+        <div class="user-profile">
+            <button class="btn-logout">Log Out</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Target 2: Proportional Layout Growth (Grow, Shrink & Basis) -->
+        <section id="workspace-layout">
+            <h2>The Three-Pane Workspace</h2>
+            <div class="workspace">
+                <aside class="sidebar-left">
+                    <h3>File Explorer</h3>
+                    <p>Fixed details.</p>
+                </aside>
+                
+                <article class="editor-main">
+                    <h3>Code Editor Area</h3>
+                    <p>This is the primary area that should expand aggressively to gobble up all available free space left behind by the sidebars.</p>
+                </article>
+                
+                <aside class="sidebar-right">
+                    <h3>Inspector Panel</h3>
+                    <p>Fixed details.</p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Target 3: Smart Wrapping Badges (Flex-Wrap) -->
+        <section id="tag-cloud-section">
+            <h2>Dynamic Skill Tags</h2>
+            <div class="tag-container">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS Architecture</span>
+                <span class="tag">Flexbox Mastery</span>
+                <span class="tag">Grid Layouts</span>
+                <span class="tag">Responsive Web Design</span>
+                <span class="tag">Web Accessibility (a11y)</span>
+                <span class="tag">Performance Optimization</span>
+            </div>
+        </section>
+
+        <!-- Target 4: Reordering Components Without Changing HTML (Order & Align-Self) -->
+        <section id="product-feature-zone">
+            <h2>Product Spotlights</h2>
+            
+            <div class="feature-card">
+                <div class="feature-media">🖼️ Graphic Image Placeholder</div>
+                <div class="feature-text">
+                    <h3>Feature One: High Performance</h3>
+                    <p>Engineered to execute tasks smoothly without lagging or dropping frames on screens.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-media">🖼️ Graphic Image Placeholder</div>
+                <div class="feature-text">
+                    <h3>Feature Two: Intuitive Interface</h3>
+                    <p>Designed visually to guide the human eye effortlessly down to your main action buttons.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Flexbox Arena © 2026</p>
+    </footer>
+
+</body>
+</html>
