@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPulse Grid Control Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CSS State Trick: A hidden checkbox that acts as a pure CSS Sidebar Toggle -->
+    <input type="checkbox" id="sidebar-toggle" class="state-toggle">
+
+    <!-- 1. MACRO CONTAINER: Wraps the entire application grid -->
+    <div class="app-container">
+
+        <!-- 2. SIDEBAR NAVIGATION CONTROLLER -->
+        <aside class="app-sidebar">
+            <div class="sidebar-brand">
+                <span class="brand-icon">⚡</span>
+                <h2>DevPulse</h2>
+                <!-- Label linked to hidden checkbox to serve as our mobile close button -->
+                <label for="sidebar-toggle" class="sidebar-close">✕</label>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#dashboard" class="active" data-nav="dash">Dashboard</a></li>
+                    <li><a href="#analytics" data-nav="analytics">Analytics</a></li>
+                    <li><a href="#projects" data-nav="projects">Projects</a></li>
+                    <li><a href="#settings" data-nav="settings">Settings</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-pill">
+                    <div class="avatar-frame">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200" alt="User Profile Picture">
+                    </div>
+                    <div class="user-meta">
+                        <h4>Alex M.</h4>
+                        <span>Admin Account</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- 3. TOP MANAGEMENT HEADER BAR -->
+        <header class="app-header">
+            <div class="header-left">
+                <!-- Hamburger trigger button for mobile views -->
+                <label for="sidebar-toggle" class="hamburger-trigger">☰</label>
+                <h1>Command Center</h1>
+            </div>
+            <div class="header-right">
+                <span class="system-badge" data-status="secure">System Online</span>
+                <a href="#notifications" class="icon-link notification-indicator">🔔</a>
+            </div>
+        </header>
+
+        <!-- 4. MAIN CENTRAL WORKSPACE WINDOW -->
+        <main class="app-content">
+
+            <!-- TRACK 1: Metric Overview Cards (Asymmetric Grid) -->
+            <section class="metrics-grid">
+                <div class="metric-card update-pulse">
+                    <div class="card-title-row">
+                        <h3>API Request Vol</h3>
+                        <span class="trend-up">+14.2%</span>
+                    </div>
+                    <p class="metric-number">4.2M</p>
+                    <span class="metric-footer">Across last 24 hours</span>
+                </div>
+
+                <div class="metric-card">
+                    <div class="card-title-row">
+                        <h3>Server Node CPU</h3>
+                        <span class="trend-down">-2.1%</span>
+                    </div>
+                    <p class="metric-number">32%</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-fill" style="width: 32%;"></div>
+                    </div>
+                </div>
+
+                <div class="metric-card hero-metric">
+                    <h3>Global Deployment Status</h3>
+                    <p class="metric-desc">Cluster nodes successfully compiled across 12 zones with zero active pipeline interruptions.</p>
+                    <a href="#deployments" class="action-link-btn">View Nodes →</a>
+                </div>
+            </section>
+
+            <!-- TRACK 2: Analytics & Document Logs Split (Flexbox Workspace) -->
+            <div class="workspace-split">
+                <!-- Data Visualizer Mock Card -->
+                <article class="data-chart-card">
+                    <h3>Performance Output Trend</h3>
+                    <div class="chart-mockup-frame">
+                        <!-- Pure CSS bar visualization chart -->
+                        <div class="bar" style="--height: 45%;"><span>Mon</span></div>
+                        <div class="bar" style="--height: 75%;"><span>Tue</span></div>
+                        <div class="bar" style="--height: 60%;"><span>Wed</span></div>
+                        <div class="bar" style="--height: 90%;"><span>Thu</span></div>
+                        <div class="bar" style="--height: 50%;"><span>Fri</span></div>
+                    </div>
+                </article>
+
+                <!-- System Activity Log Card -->
+                <aside class="log-panel">
+                    <h3>System Operational Logs</h3>
+                    <ul class="log-list">
+                        <li data-log="info"><strong>08:42:12</strong> Pipeline successfully deployment completed.</li>
+                        <li data-log="warn"><strong>10:15:45</strong> Latency threshold anomaly detected at Asia-East node.</li>
+                        <li data-log="error"><strong>14:22:01</strong> Failed authentication handshake attempt blocked.</li>
+                        <li data-log="info"><strong>17:55:30</strong> Database automated clean system routine initialized.</li>
+                    </ul>
+                </aside>
+            </div>
+        </main>
+
+        <!-- 5. APPLICATION RUNTIME FOOTER -->
+        <footer class="app-footer">
+            <p>DevPulse OS v4.12.0 • Operational Sandbox Environment</p>
+            <p>© 2026 Architectural Systems Inc.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
