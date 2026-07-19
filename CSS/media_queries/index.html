@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Responsive Breakpoint Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Target 1: Responsive Navigation Pattern (Hamburgers vs Row Link List) -->
+    <header class="responsive-header">
+        <div class="logo">📱 Responsive Hub</div>
+        <button type="button" class="menu-toggle" aria-expanded="false">☰ Menu</button>
+        <nav class="navigation-drawer">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Analytics</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Target 2: Fluid Multi-Column Adaptability -->
+        <section id="content-grid-system">
+            <h2>Adaptive Content Flow</h2>
+            <p class="breakpoint-indicator">Current Mode: Mobile Viewport</p>
+            
+            <div class="adaptive-layout">
+                <main class="primary-feed">
+                    <h3>Primary Stream</h3>
+                    <p>On small screens, I must occupy full width. On tablets, I share space. On widescreen desktops, I lock cleanly center-left.</p>
+                </main>
+                <aside class="sidebar-widgets">
+                    <h3>Contextual Extras</h3>
+                    <p>I stack beneath everything on mobile devices, wrap nicely next to the stream on tablets, and form a secondary column on desktop configurations.</p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Target 3: Accessibility Media Features (Prefers-Color-Scheme & Prefers-Reduced-Motion) -->
+        <section id="accessibility-sandbox">
+            <h2>System Preference Sniffer</h2>
+            <div class="theme-card">
+                <h3>System Preference Awareness</h3>
+                <p>This box dynamically shifts its base design variables depending on the system-level OS preferences of the user reading it.</p>
+                <div class="animated-spinner">🔄 Loading Assets...</div>
+            </div>
+        </section>
+
+        <!-- Target 4: Pointer & Input Capability Queries (Hover Capabilities) -->
+        <section id="pointer-precision">
+            <h2>Interaction Capability</h2>
+            <div class="action-card">
+                <h3>Touch Screen vs Mouse Precision</h3>
+                <p>Hover triggers are excellent for mouse users but frustrating on smartphones because touch screen users don't have a "hovering cursor." Can you adapt your interaction strategy to accommodate device input styles?</p>
+                <button class="interactive-btn">Action Button</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Media Query Engine Lab © 2026</p>
+    </footer>
+
+</body>
+</html>

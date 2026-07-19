@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CSS Motion Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>The Motion & Animation Lab</h1>
+        <p>Experimenting with states, multi-step keyframes, custom pacing curves, and hardware acceleration.</p>
+    </header>
+
+    <main>
+        <!-- Target 1: Micro-Interactions & Transitions -->
+        <section id="micro-interactions">
+            <h2>1. Micro-Interaction Smoothness</h2>
+            <p>A basic interface button should react cleanly when hovered over or clicked, instead of jumping instantly between styles.</p>
+            <div class="interactive-row">
+                <button class="btn-morph">Submit Order</button>
+            </div>
+        </section>
+
+        <!-- Target 2: Infinite Loop Custom Loader (Keyframes) -->
+        <section id="looping-animations">
+            <h2>2. Infinite Timeline Loops</h2>
+            <p>Create a custom loading widget that animates continuous rhythmic motion completely independent of user interaction.</p>
+            <div class="loader-track">
+                <div class="bouncing-ball"></div>
+                <div class="bouncing-ball"></div>
+                <div class="bouncing-ball"></div>
+            </div>
+        </section>
+
+        <!-- Target 3: Staggered Content Reveal (Delays & Fill Modes) -->
+        <section id="staggered-entry">
+            <h2>3. Staggered Content Entrances</h2>
+            <p>When a dashboard loads, having all content pop onto the screen instantly feels harsh. A subtle, staggered "fade-in-and-slide-up" entry looks far more polished.</p>
+            <div class="entry-grid">
+                <div class="reveal-card"><h4>Analytics Summary</h4><p>Data stream active.</p></div>
+                <div class="reveal-card"><h4>System Performance</h4><p>All nodes healthy.</p></div>
+                <div class="reveal-card"><h4>Security Firewall</h4><p>Monitoring incoming traffic.</p></div>
+            </div>
+        </section>
+
+        <!-- Target 4: 3D Card Flip Experience (Perspective & Transform Engine) -->
+        <section id="perspective-playground">
+            <h2>4. 3D Spatial Transforms</h2>
+            <p>Hover over the card envelope below to flip it completely over in a realistic 3D space, revealing the details on the back side.</p>
+            <div class="card-scene">
+                <div class="flip-card-inner">
+                    <div class="card-face card-front">
+                        <h3>Hover to Flip</h3>
+                        <p>Front Side Details</p>
+                    </div>
+                    <div class="card-face card-back">
+                        <h3>Success!</h3>
+                        <p>You have accessed the hidden reverse side data panel using 3D spatial rotation mechanics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Motion Graphics Engine Lab © 2026</p>
+    </footer>
+
+</body>
+</html>
